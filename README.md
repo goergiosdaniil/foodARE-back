@@ -22,10 +22,6 @@ Needed APIs
     1.1)Add New User
     1.2)Update User Details
     1.3)Delete User
-2)Dietitians
-    2.1)Add New Dietitian
-    2.2)Update Dietitian Details
-    2.3)Delete Dietitian
 3)Photos
     3.1)Add New Photo
     3.2)Update Photo Details
@@ -45,3 +41,14 @@ Steps to be done
     2.3)Create database plan
 3) Create the databaseV1
 4) Create the routesV1
+
+-------------------------------------------
+01/02/2024
+I decided not to have dietitans as a different table
+Everybody will be a user
+Later it will be dietitan or not.
+And according to that it will be handled differently
+
+5)Page to create users
+6)Page to upload photos 
+7) Storing these photos
