@@ -35,40 +35,13 @@ Needed APIs
 
 
 --------------------------------------
-Database Needed
-Users
-    Id
-    First Name
-    Last Name
-    Image
-    BIrthday
-    City
-    DietitiansId
-Dietitians
-    Id
-    First Name
-    Last Name
-    Image
-    BIrthday
-    City
-Photos
-    Id
-    UsersId
-    DateTime
-    Location
-    UrlImage
-    Description
-    Other Info
-Weight Logs
-    Id
-    UsersId
-    DateTime
-    Location
-    UrlImage
-    Weight
+
 
 Steps to be done
 1) Create git repo --> Done 01/02/2024
-2) Create the express project
+2) Create the express project --> Done 01/02/2024
+    2.1)Create API plan
+    2.2)Create pages plan
+    2.3)Create database plan
 3) Create the databaseV1
 4) Create the routesV1
