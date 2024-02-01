@@ -39,8 +39,8 @@ Steps to be done
     2.1)Create API plan
     2.2)Create pages plan
     2.3)Create database plan
-3) Create the databaseV1
-4) Create the routesV1
+3) Create the databaseV1 --> DOne
+4) Create the routesV1 --> DOne
 
 -------------------------------------------
 01/02/2024
@@ -52,3 +52,11 @@ And according to that it will be handled differently
 5)Page to create users
 6)Page to upload photos 
 7) Storing these photos
+
+
+TO be done tomorrow
+1)continue the tutorial
+2)Give photo 
+3)Store Photo
+4)Take Metadata from PHoto
+what else?
