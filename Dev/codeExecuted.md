@@ -8,3 +8,4 @@ npx prisma studio
 npm install @prisma/client
 npm install jsonwebtoken
 npm i --save-dev @types/jsonwebtoken
+npm install @aws-sdk/client-ses
