@@ -71,4 +71,10 @@ what else?
 03/02/2024
 Finalized the authentication
 3.33.28 on the tutorial
-
+03/02/2024
+Continued. let`s continue with tutorial
+-------------------------------------
+Crucial I finished checking the authentication for uploading photo and weight. Thought all the other CRUD operations don`t check the id in the proper way
+I have to fix that.
+Now I will continue with the tutorial in the mail service sending thing
+Also I should check amazon cognito

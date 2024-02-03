@@ -9,13 +9,15 @@ const prisma = new PrismaClient();
 
 //Upload Weight
 router.post('/',async (req, res)=>{
-    const {measurement, image, userId} = req.body;
+    const {measurement, image} = req.body;
+ // @ts-ignore
+    const user = req.user;
     try{
         const result = await prisma.weight.create({
             data: {
                 measurement,
                 image,
-                userId:Number(userId),
+                userId: user.id,
             },
         });
 

@@ -1,19 +1,25 @@
 import { Router } from "express";
 import { PrismaClient } from "@prisma/client";
 
+
 const router = Router();
 const prisma = new PrismaClient();
+const JWT_SECRET = process.env.JWT_SECRET || 'SUPER SECRET';
+
 // USER CRUD
 
 //Upload new Photo
 router.post('/',async (req, res)=>{
-    const {image, description,userId} = req.body;
+    const {image, description} = req.body;
+// @ts-ignore
+    const user = req.user;
+
     try{
         const result = await prisma.photo.create({
             data: {
                 image,
                 description,
-                userId,
+                userId: user.id,
             },
         });
         res.json(result);
@@ -50,7 +56,7 @@ router.get('/:id',async (req, res)=> {
 
 });
 
-//Update one Photo
+//Update one Photo 
 router.put('/:id',async (req, res)=> {
     const {id} = req.params;
     const {image,description} = req.body;

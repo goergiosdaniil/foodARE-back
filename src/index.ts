@@ -3,11 +3,16 @@ import usersRoutes from './routes/usersRoutes';
 import photosRoutes from './routes/photosRoutes';
 import weightRoutes from './routes/weightRoutes';
 import authRoutes from './routes/authRoutes';
+import { authenticateToken } from './middlewares/authMiddleware';
+
+
+
+
 const app = express();
 app.use(express.json());
-app.use('/user',usersRoutes);
-app.use('/photos',photosRoutes);
-app.use('/weight',weightRoutes);
+app.use('/user', authenticateToken,usersRoutes);
+app.use('/photos', authenticateToken,photosRoutes);
+app.use('/weight', authenticateToken,weightRoutes);
 app.use('/auth',authRoutes);
 
 app.get('/', (req, res) => {
