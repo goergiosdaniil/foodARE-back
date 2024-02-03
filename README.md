@@ -60,3 +60,15 @@ TO be done tomorrow
 3)Store Photo
 4)Take Metadata from PHoto
 what else?
+
+--------------------------------------
+02/02/2024
+1) Continue the tutorial
+3) Today I will focus on user editing and user passwordless authentication
+
+--------------------------------------
+
+03/02/2024
+Finalized the authentication
+3.33.28 on the tutorial
+
