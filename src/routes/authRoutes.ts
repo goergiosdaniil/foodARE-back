@@ -64,6 +64,7 @@ router.post('/login', async (req, res) => {
 // Validate the emailToken
 // Generate a long-lived JWT token
 router.post('/authenticate', async (req, res) => {
+  console.log(req.body)
   const { email, emailToken } = req.body;
   console.log(email,emailToken);
 
